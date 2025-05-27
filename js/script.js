@@ -98,3 +98,111 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+// Language Switcher Logic - Added
+document.addEventListener("DOMContentLoaded", function() {
+    const languageButtons = document.querySelectorAll(".language-btn");
+    const translatableElements = document.querySelectorAll("[data-translate]");
+    const htmlTag = document.documentElement;
+
+    // Function to set the language
+    const setLanguage = (lang) => {
+        // Check if translations for the selected language exist
+        if (!translations[lang]) {
+            console.error(`Translations for language '${lang}' not found.`);
+            return; // Exit if translations are missing
+        }
+
+        // Update text content of translatable elements
+        translatableElements.forEach(element => {
+            const key = element.getAttribute("data-translate");
+            // Use textContent for most elements, but check for specific cases if needed (e.g., input placeholders)
+            if (translations[lang][key]) {
+                // Find the innermost text node if element contains other nodes (like icons)
+                let targetNode = element;
+                if (element.childNodes.length > 1 && element.querySelector("span[data-translate]")) {
+                   // If we wrapped text in spans, target the span directly
+                   targetNode = element.querySelector("span[data-translate]");
+                } else if (element.childNodes.length > 0) {
+                    // Attempt to find the primary text node, often the last one
+                    for (let i = element.childNodes.length - 1; i >= 0; i--) {
+                        if (element.childNodes[i].nodeType === Node.TEXT_NODE && element.childNodes[i].textContent.trim() !== "") {
+                            targetNode = element.childNodes[i];
+                            break;
+                        }
+                    }
+                    // Fallback to the element itself if no suitable text node found
+                    if (targetNode === element && element.firstChild && element.firstChild.nodeType === Node.TEXT_NODE) {
+                         targetNode = element.firstChild;
+                    }
+                }
+                // Check if targetNode is actually a text node before setting textContent
+                if(targetNode && targetNode.textContent !== undefined) {
+                    targetNode.textContent = translations[lang][key];
+                } else if (element.textContent !== undefined) {
+                    // Fallback for elements where finding the specific text node failed
+                    element.textContent = translations[lang][key];
+                }
+
+            } else {
+                console.warn(`Translation key '${key}' not found for language '${lang}'.`);
+            }
+        });
+
+        // Update page title if translation exists
+        if (translations[lang]["page_title"]) {
+            document.title = translations[lang]["page_title"];
+        }
+
+        // Update HTML lang attribute
+        htmlTag.setAttribute("lang", lang);
+
+        // Update active button state
+        languageButtons.forEach(button => {
+            if (button.getAttribute("data-lang") === lang) {
+                button.classList.add("active");
+            } else {
+                button.classList.remove("active");
+            }
+        });
+
+        // Save language preference
+        try {
+            localStorage.setItem("preferredLanguage", lang);
+        } catch (e) {
+            console.error("Could not save language preference to localStorage:", e);
+        }
+    };
+
+    // Add click event listeners to buttons
+    languageButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const selectedLang = button.getAttribute("data-lang");
+            setLanguage(selectedLang);
+        });
+    });
+
+    // Set initial language on page load
+    let preferredLanguage = "pt"; // Default language
+    try {
+        const storedLanguage = localStorage.getItem("preferredLanguage");
+        if (storedLanguage && translations[storedLanguage]) {
+            preferredLanguage = storedLanguage;
+        } else {
+            // Optional: Detect browser language (e.g., 'en-US' -> 'en')
+            const browserLang = navigator.language.split('-')[0];
+            if (translations[browserLang]) {
+                preferredLanguage = browserLang;
+            }
+        }
+    } catch (e) {
+        console.error("Could not retrieve language preference from localStorage:", e);
+        // Stick with the default 'pt'
+    }
+
+    // Apply the initial language
+    setLanguage(preferredLanguage);
+});
+
