@@ -624,7 +624,7 @@ img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-image: url('https://sdmntprwestus2.oaiusercontent.com/files/00000000-ce7c-61f8-9716-9aa159d2ec7a/raw?se=2025-05-25T18%3A29%3A05Z&sp=r&sv=2024-08-04&sr=b&scid=aa036313-3699-5954-a810-b1a8cc917f8a&skoid=bbd22fc4-f881-4ea4-b2f3-c12033cf6a8b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-25T11%3A00%3A13Z&ske=2025-05-26T11%3A00%3A13Z&sks=b&skv=2024-08-04&sig=BPxgyg6FL%2BsEqc3LDZuo9dOqY2g9rZqtlVw1x/jsGHs%3D');
+    background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e');
     background-size: cover;
     background-position: center;
     margin-right: 20px;
@@ -733,6 +733,30 @@ footer {
     transform: scale(1.1);
 }
 
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.language-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.language-btn:hover {
+    background-color: #006699;
+}
+
 /* Responsividade */
 @media (max-width: 992px) {
     .hero-content h1 {
@@ -839,3 +863,106 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Language Switcher - Added */
+.language-switcher {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0 20px; /* Add some space around the switcher */
+}
+
+.language-btn {
+    background-color: rgba(0, 136, 204, 0.1); /* Lighter background */
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-btn:hover,
+.language-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Adjust Header for Language Switcher */
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+#header nav {
+    display: flex; /* Ensure nav itself is flex for alignment */
+    align-items: center;
+}
+
+/* Remove fixed position language switcher from original CSS if it exists */
+/* (The python script already removed the HTML part) */
+
+/* Responsiveness Adjustments for Language Switcher */
+@media (max-width: 992px) {
+    .language-switcher {
+        margin: 0 15px; /* Adjust margin */
+    }
+}
+
+@media (max-width: 768px) {
+    #header .container {
+        position: relative; /* Needed for absolute positioning of mobile menu */
+        flex-wrap: wrap; /* Allow items to wrap */
+        padding-bottom: 10px; /* Add space below header content */
+    }
+    .logo {
+       /* Keep logo on the left */
+       margin-right: auto;
+       /* Optional: Adjust width if needed, e.g., width: calc(100% - 50px); */
+    }
+    #header nav {
+       /* Keep nav (burger) on the right */
+       margin-left: auto;
+       /* Optional: Set specific width if needed, e.g., width: 40px; */
+    }
+    .language-switcher {
+        /* Position below logo/nav row, aligned left */
+        order: 3; /* Ensure it comes after logo and nav */
+        width: 100%; /* Take full width */
+        margin: 10px 0 0 0; /* Top margin 10px, remove horizontal/bottom margins */
+        padding-left: 0; /* Align buttons relative to container padding */
+        justify-content: flex-start; /* Align buttons to the start (left) */
+        gap: 8px; /* Restore original gap or adjust */
+        position: static; /* Ensure it flows naturally */
+        top: auto;
+        right: auto;
+    }
+    .menu-mobile {
+        order: 2; /* Ensure burger menu is last on the first row */
+    }
+    /* Adjust body padding-top to prevent overlap with taller header */
+    body {
+        padding-top: 100px; /* Adjust this value based on wrapped header height */
+    }
+}
+
+@media (max-width: 480px) {
+    .language-btn {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+    .language-switcher {
+        gap: 5px; /* Slightly smaller gap */
+        margin-top: 8px; /* Adjust top margin */
+    }
+    /* Adjust body padding if header height changes again */
+     body {
+        padding-top: 90px; /* Example adjustment */
+    }
+}
+
