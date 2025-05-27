@@ -17,13 +17,19 @@
             <div class="logo">
                 <h1>ToraTour Búzios</h1>
             </div>
+        <div class="language-switcher">
+            <button class="language-btn" data-lang="pt" data-translate="lang_pt">PT</button>
+            <button class="language-btn" data-lang="en" data-translate="lang_en">EN</button>
+            <button class="language-btn" data-lang="es" data-translate="lang_es">ES</button>
+        </div>
+
             <nav>
                 <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#casa-buziana">Aluguel de Casa</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#home"><span data-translate="menu_home">Home</span></a></li>
+                    <li><a href="#servicos"><span data-translate="menu_services">Serviços</span></a></li>
+                    <li><a href="#casa-buziana"><span data-translate="menu_house_rental">Aluguel de Casa</span></a></li>
+                    <li><a href="#depoimentos"><span data-translate="menu_testimonials">Depoimentos</span></a></li>
+                    <li><a href="#contato"><span data-translate="menu_contact">Contato</span></a></li>
                 </ul>
                 <div class="menu-mobile">
                     <i class="fas fa-bars"></i>
@@ -37,11 +43,13 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Olá, sou a Luli!</h1>
-                <p>Recepcionista da Pousada Centro UP, atendendo para passeios as três pousadas do grupo G Hotelaria em Búzios</p>
-                <p class="hero-subtitle">Posso te ajudar a organizar passeios incríveis durante sua estadia</p>
+                <h1 data-translate="hero_greeting">Olá, sou a Luli!</h1>
+                <p data-translate="hero_intro">
+                    Recepcionista da Pousada Centro UP, atendendo para passeios as três pousadas do grupo G Hotelaria em Búzios
+                </p>
+                <p class="hero-subtitle"><span data-translate="hero_subtitle">Posso te ajudar a organizar passeios incríveis durante sua estadia</span></p>
                 <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20informações%20sobre%20passeios%20em%20Búzios." class="btn btn-primary whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Fale comigo no WhatsApp
+                    <i class="fab fa-whatsapp"></i> <span data-translate="hero_whatsapp_button">Fale comigo no WhatsApp</span>
                 </a>
             </div>
         </div>
@@ -53,16 +61,16 @@
             <div class="welcome-card">
                 <div class="welcome-image"></div>
                 <div class="welcome-content">
-                    <h2>Bem-vindo(a) a Búzios!</h2>
-                    <p>Olá! Sou Lucila Lucero, mas todos me chamam de Luli. Trabalho como recepcionista na Pousada Centro UP e moro em Búzios há 4 anos, conheço cada cantinho especial desta cidade maravilhosa!</p>
-                    <p>Estou aqui para tornar sua estadia muito mais especial, oferecendo os melhores passeios e experiências para os hóspedes das três pousadas do nosso grupo:</p>
+                    <h2><span data-translate="welcome_title">Bem-vindo(a) a Búzios!</span></h2>
+                    <p><span data-translate="welcome_para1">Olá! Sou Lucila Lucero, mas todos me chamam de Luli. Trabalho como recepcionista na Pousada Centro UP e moro em Búzios há 4 anos, conheço cada cantinho especial desta cidade maravilhosa!</span></p>
+                    <p><span data-translate="welcome_para2">Estou aqui para tornar sua estadia muito mais especial, oferecendo os melhores passeios e experiências para os hóspedes das três pousadas do nosso grupo:</span></p>
                     <ul class="pousadas-list">
                         <li><i class="fas fa-hotel"></i> Pousada Casa Centro Búzios (Rua Rui Barbosa, Centro)</li>
                         <li><i class="fas fa-hotel"></i> Pousada Centro Class Búzios (Rua Rui Barbosa, Centro)</li>
                         <li><i class="fas fa-hotel"></i> Pousada Centro UP (Centro de Búzios)</li>
                     </ul>
-                    <p>Durante esses anos, criei parcerias com os melhores guias e operadores locais, garantindo que você tenha experiências seguras, divertidas e inesquecíveis. Meu objetivo é que você se apaixone por Búzios tanto quanto eu!</p>
-                    <p>Todos os serviços podem ser reservados diretamente pelo WhatsApp, de forma rápida e personalizada. Estou sempre disponível para tirar suas dúvidas e ajudar a planejar seu roteiro perfeito.</p>
+                    <p><span data-translate="welcome_para3">Durante esses anos, criei parcerias com os melhores guias e operadores locais, garantindo que você tenha experiências seguras, divertidas e inesquecíveis. Meu objetivo é que você se apaixone por Búzios tanto quanto eu!</span></p>
+                    <p><span data-translate="welcome_para4">Todos os serviços podem ser reservados diretamente pelo WhatsApp, de forma rápida e personalizada. Estou sempre disponível para tirar suas dúvidas e ajudar a planejar seu roteiro perfeito.</span></p>
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fab fa-whatsapp"></i>
@@ -77,7 +85,7 @@
     <!-- Serviços -->
     <section id="servicos" class="servicos">
         <div class="container">
-            <h2 class="section-title">Passeios e Experiências</h2>
+            <h2 class="section-title"><span data-translate="services_title">Passeios e Experiências</span></h2>
             
             <!-- Passeio de Escuna -->
             <div class="servico-card">
@@ -85,19 +93,19 @@
                 <div class="servico-content">
                     <div class="servico-header">
                         <div class="emoji">⛵</div>
-                        <h3>Passeio de Escuna</h3>
+                        <h3><span data-translate="service_escuna_title">Passeio de Escuna</span></h3>
                     </div>
                     <div class="preco">
-                        <span>R$ 70</span>/pessoa
+                        <span>R$ 70</span><span data-translate="service_escuna_price">/pessoa</span>
                     </div>
-                    <p>Olá! Esse é um dos meus passeios favoritos para recomendar! Você vai navegar por 12 das praias mais lindas de Búzios em uma escuna tradicional super confortável. O passeio inclui 3 paradas estratégicas para mergulho em águas cristalinas, onde você pode nadar, tirar fotos incríveis e até alimentar peixinhos coloridos! A tripulação é super animada e vai garantir que você se divirta do início ao fim. Não esqueça de levar protetor solar, toalha e uma roupa seca para depois!</p>
+                    <p><span data-translate="service_escuna_desc">Olá! Esse é um dos meus passeios favoritos para recomendar! Você vai navegar por 12 das praias mais lindas de Búzios em uma escuna tradicional super confortável. O passeio inclui 3 paradas estratégicas para mergulho em águas cristalinas, onde você pode nadar, tirar fotos incríveis e até alimentar peixinhos coloridos! A tripulação é super animada e vai garantir que você se divirta do início ao fim. Não esqueça de levar protetor solar, toalha e uma roupa seca para depois!</span></p>
                     <ul class="features">
-                        <li><i class="fas fa-check"></i> Crianças até 5 anos não pagam</li>
-                        <li><i class="fas fa-check"></i> Crianças de 6 a 10 anos pagam meia</li>
-                        <li><i class="fas fa-check"></i> Saídas diárias às 12h (duração: 2h30)</li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_escuna_feat1">Crianças até 5 anos não pagam</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_escuna_feat2">Crianças de 6 a 10 anos pagam meia</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_escuna_feat3">Saídas diárias às 10h e 14h (duração: 2h30)</span></li>
                     </ul>
                     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20reservar%20o%20Passeio%20de%20Escuna." class="btn btn-secondary whatsapp-reserva">
-                        <i class="fab fa-whatsapp"></i> Reservar Passeio de Escuna
+                        <i class="fab fa-whatsapp"></i> <span data-translate="service_escuna_button">Reservar Passeio de Escuna</span>
                     </a>
                 </div>
             </div>
@@ -108,26 +116,26 @@
   <div class="servico-content">
     <div class="servico-header">
       <div class="emoji">🏎️</div>
-      <h3>Aluguel de Buggy 24h</h3>
+      <h3><span data-translate="service_buggy_rental_title">Aluguel de Buggy 24h</span></h3>
     </div>
     <div class="preco">
-      <span>R$ 280</span> no dinheiro, cartão e pix<br>
-      <small>Necessário carteira de habilitação e cartão de crédito</small>
+      <span data-translate="service_buggy_rental_price1"><span>R$ 280</span> no dinheiro, cartão e pix</span><br>
+      <small><span data-translate="service_buggy_rental_price2">Necessário carteira de habilitação e cartão de crédito</span></small>
     </div>
     <p>
-      Explore as belas paisagens de Búzios de um jeito único e divertido! Alugue um buggy para rodar 24 horas pelas praias, trilhas e mirantes da região. O buggy é revisado. Você tem total liberdade para criar seu próprio roteiro e parar onde quiser: Praia da Ferradura, João Fernandes, Azeda e muito mais!
+      <span data-translate="service_buggy_rental_desc">Explore as belas paisagens de Búzios de um jeito único e divertido! Alugue um buggy para rodar 24 horas pelas praias, trilhas e mirantes da região. O buggy é revisado. Você tem total liberdade para criar seu próprio roteiro e parar onde quiser: Praia da Ferradura, João Fernandes, Azeda e muito mais!</span>
     </p>
 <ul class="features">
-  <li><i class="fas fa-check"></i> Necessário estar hospedado em Búzios</li>
-  <li><i class="fas fa-check"></i> Idade mínima: 21 anos</li>
-  <li><i class="fas fa-check"></i> Apresentar habilitação e cartão de crédito</li>
-  <li><i class="fas fa-check"></i> O buggy será deixado na pousada ao amanhecer</li>
-  <li><i class="fas fa-info-circle"></i> Proibido andar na areia da praia ou sair da cidade</li>
-  <li><i class="fas fa-check"></i> Suporte para assistência incluso</li>
+  <li><i class="fas fa-check"></i> <span data-translate="service_buggy_rental_feat1">Necessário estar hospedado em Búzios</span></li>
+  <li><i class="fas fa-check"></i> <span data-translate="service_buggy_rental_feat2">Idade mínima: 21 anos</span></li>
+  <li><i class="fas fa-check"></i> <span data-translate="service_buggy_rental_feat3">Apresentar habilitação e cartão de crédito</span></li>
+  <li><i class="fas fa-check"></i> <span data-translate="service_buggy_rental_feat4">O buggy será deixado na pousada ao amanhecer</span></li>
+  <li><i class="fas fa-info-circle"></i> <span data-translate="service_buggy_rental_feat5">Proibido andar na areia da praia ou sair da cidade</span></li>
+  <li><i class="fas fa-check"></i> <span data-translate="service_buggy_rental_feat6">Suporte para assistência incluso</span></li>
 </ul>
 
     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20reservar%20o%20aluguel%20de%20Buggy%2024h." class="btn btn-secondary whatsapp-reserva">
-      <i class="fab fa-whatsapp"></i> Reservar Buggy
+      <i class="fab fa-whatsapp"></i> <span data-translate="service_buggy_rental_button">Reservar Buggy</span>
     </a>
   </div>
 </div>
@@ -138,20 +146,20 @@
                 <div class="servico-content">
                     <div class="servico-header">
                         <div class="emoji">🚗</div>
-                        <h3>Buggy Tour</h3>
+                        <h3><span data-translate="service_buggy_tour_title">Buggy Tour</span></h3>
                     </div>
                     <div class="preco">
-                        <span>R$ 210</span> em dinheiro/PIX<br>
-                        <span>R$ 220</span> no cartão
+                        <span data-translate="service_buggy_tour_price1"><span>R$ 210</span> em dinheiro/PIX</span><br>
+                        <span data-translate="service_buggy_tour_price2"><span>R$ 220</span> no cartão</span>
                     </div>
-                    <p>Esse passeio é simplesmente imperdível! Nosso Buggy Tour passa por 8 praias deslumbrantes e faz 6 paradas estratégicas para fotos em mirantes de tirar o fôlego. Você vai conhecer a famosa Orla Bardot, ver a estátua da Brigitte Bardot, os Três Pescadores, e visitar as praias mais bonitas como João Fernandes, Ferradura e Praia Brava. O motorista é super experiente e conhece todos os melhores ângulos para fotos perfeitas! O passeio dura aproximadamente 1h20min e é uma forma divertida e emocionante de conhecer Búzios. Posso garantir que será um dos pontos altos da sua viagem!</p>
+                    <p><span data-translate="service_buggy_tour_desc">Esse passeio é simplesmente imperdível! Nosso Buggy Tour passa por 8 praias deslumbrantes e faz 6 paradas estratégicas para fotos em mirantes de tirar o fôlego. Você vai conhecer a famosa Orla Bardot, ver a estátua da Brigitte Bardot, os Três Pescadores, e visitar as praias mais bonitas como João Fernandes, Ferradura e Praia Brava. O motorista é super experiente e conhece todos os melhores ângulos para fotos perfeitas! O passeio dura aproximadamente 1h20min e é uma forma divertida e emocionante de conhecer Búzios. Posso garantir que será um dos pontos altos da sua viagem!</span></p>
                     <ul class="features">
-                        <li><i class="fas fa-check"></i> Para 2 passageiros</li>
-                        <li><i class="fas fa-check"></i> 6 paradas para fotos nos mirantes mais bonitos</li>
-                        <li><i class="fas fa-check"></i> Você escolhe onde desembarcar no final do passeio</li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_buggy_tour_feat1">Para 2 passageiros</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_buggy_tour_feat2">6 paradas para fotos nos mirantes mais bonitos</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_buggy_tour_feat3">Você escolhe onde desembarcar no final do passeio</span></li>
                     </ul>
                     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20reservar%20o%20Buggy%20Tour." class="btn btn-secondary whatsapp-reserva">
-                        <i class="fab fa-whatsapp"></i> Reservar Buggy Tour
+                        <i class="fab fa-whatsapp"></i> <span data-translate="service_buggy_tour_button">Reservar Buggy Tour</span>
                     </a>
                 </div>
             </div>
@@ -162,20 +170,20 @@
                 <div class="servico-content">
                     <div class="servico-header">
                         <div class="emoji">🐠</div>
-                        <h3>Mergulho</h3>
+                        <h3><span data-translate="service_diving_title">Mergulho</span></h3>
                     </div>
                     <div class="preco">
-                        <span>R$ 230</span> em dinheiro/PIX<br>
-                        <span>      </span> no cartão (+10%)
+                        <span data-translate="service_diving_price1"><span>R$ 190</span> em dinheiro/PIX</span><br>
+                        <span data-translate="service_diving_price2"><span>R$ 209</span> no cartão (+10%)</span>
                     </div>
-                    <p>Você já imaginou explorar o mundo subaquático de Búzios? É uma experiência mágica! Trabalho com os melhores instrutores da região, todos certificados e super atenciosos. Mesmo se você nunca mergulhou antes, não se preocupe! Eles oferecem uma aula introdutória completa antes de entrar na água. O passeio inclui todo o equipamento necessário (máscara, snorkel, roupa de neoprene, cilindro, regulador), além de fotos e vídeos profissionais para você guardar essa lembrança para sempre. Você vai conhecer peixes coloridos, corais e a incrível vida marinha de Búzios. É uma aventura segura e inesquecível que recomendo de coração!</p>
+                    <p><span data-translate="service_diving_desc">Você já imaginou explorar o mundo subaquático de Búzios? É uma experiência mágica! Trabalho com os melhores instrutores da região, todos certificados e super atenciosos. Mesmo se você nunca mergulhou antes, não se preocupe! Eles oferecem uma aula introdutória completa antes de entrar na água. O passeio inclui todo o equipamento necessário (máscara, snorkel, roupa de neoprene, cilindro, regulador), além de fotos e vídeos profissionais para você guardar essa lembrança para sempre. Você vai conhecer peixes coloridos, corais e a incrível vida marinha de Búzios. É uma aventura segura e inesquecível que recomendo de coração!</span></p>
                     <ul class="features">
-                        <li><i class="fas fa-check"></i> Fotos e vídeos profissionais inclusos no pacote</li>
-                        <li><i class="fas fa-check"></i> Equipamento completo de alta qualidade fornecido</li>
-                        <li><i class="fas fa-check"></i> Instruções detalhadas para iniciantes, sem experiência necessária</li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_diving_feat1">Fotos e vídeos profissionais inclusos no pacote</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_diving_feat2">Equipamento completo de alta qualidade fornecido</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_diving_feat3">Instruções detalhadas para iniciantes, sem experiência necessária</span></li>
                     </ul>
                     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20reservar%20o%20Mergulho." class="btn btn-secondary whatsapp-reserva">
-                        <i class="fab fa-whatsapp"></i> Reservar Mergulho
+                        <i class="fab fa-whatsapp"></i> <span data-translate="service_diving_button">Reservar Mergulho</span>
                     </a>
                 </div>
             </div>
@@ -186,24 +194,24 @@
                 <div class="servico-content">
                     <div class="servico-header">
                         <div class="emoji">🏙️</div>
-                        <h3>City Tour Cabo Frio</h3>
+                        <h3><span data-translate="service_cabo_frio_title">City Tour Cabo Frio</span></h3>
                     </div>
                     <div class="preco">
-                        <span>R$ 170</span>/pessoa
+                        <span>R$ 150</span><span data-translate="service_cabo_frio_price">/pessoa</span>
                     </div>
-                    <p>Que tal um dia diferente explorando nossa vizinha Cabo Frio? Eu adoro esse passeio! É uma mistura perfeita de praias lindas, um pouquinho de história e até tempo para umas comprinhas. Garanto que vocês vão curtir!</p>
+                    <p><span data-translate="service_cabo_frio_desc">Que tal um dia diferente explorando nossa vizinha Cabo Frio? Eu adoro esse passeio! É uma mistura perfeita de praias lindas, um pouquinho de história e até tempo para umas comprinhas. Garanto que vocês vão curtir!</span></p>
 <ul class="features">
-    <li><i class="fas fa-check"></i> Buscamos vocês nas pousadas em Búzios a partir das 07:00h.</li>
-    <li><i class="fas fa-check"></i> Visitamos a Ilha do Japonês (parada de 1h20), Praia do Peró e Praia das Conchas (parada de 2h30).</li>
-    <li><i class="fas fa-check"></i> Tempo para compras na Rua dos Biquínis (45 min) e no shopping (45 min).</li>
-    <li><i class="fas fa-check"></i> Almoço delicioso em buffet livre já incluído!</li>
-    <li><i class="fas fa-check"></i> Retorno para Búzios por volta das 16:30h.</li>
-    <li><i class="fas fa-check"></i> Crianças até 4 anos não pagam, de 5 a 10 anos pagam metade!</li>
-    <li><i class="fas fa-info-circle"></i> Taxa de travessia para a Ilha do Japonês (R$ 10 em dinheiro) não inclusa e opcional.</li>
-    <li><i class="fas fa-sun"></i> Dica da Luli: Levem roupa de banho, toalha, protetor solar e calçado confortável!</li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_cabo_frio_feat1">Buscamos vocês nas pousadas em Búzios a partir das 07:00h.</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_cabo_frio_feat2">Visitamos a Ilha do Japonês (parada de 1h20), Praia do Peró e Praia das Conchas (parada de 2h30).</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_cabo_frio_feat3">Tempo para compras na Rua dos Biquínis (45 min) e no shopping (45 min).</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_cabo_frio_feat4">Almoço delicioso em buffet livre já incluído!</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_cabo_frio_feat5">Retorno para Búzios por volta das 16:30h.</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_cabo_frio_feat6">Crianças até 4 anos não pagam, de 5 a 10 anos pagam metade!</span></li>
+    <li><i class="fas fa-info-circle"></i> <span data-translate="service_cabo_frio_feat7">Taxa de travessia para a Ilha do Japonês (R$ 10 em dinheiro) não inclusa e opcional.</span></li>
+    <li><i class="fas fa-sun"></i> <span data-translate="service_cabo_frio_feat8">Dica da Luli: Levem roupa de banho, toalha, protetor solar e calçado confortável!</span></li>
 </ul>
                     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20reservar%20o%20City%20Tour%20Cabo%20Frio." class="btn btn-secondary whatsapp-reserva">
-                        <i class="fab fa-whatsapp"></i> Reservar City Tour Cabo Frio
+                        <i class="fab fa-whatsapp"></i> <span data-translate="service_cabo_frio_button">Reservar City Tour Cabo Frio</span>
                     </a>
                 </div>
             </div>
@@ -214,21 +222,21 @@
                 <div class="servico-content">
                     <div class="servico-header">
                         <div class="emoji">🏝️</div>
-                        <h3>Arraial do Cabo</h3>
+                        <h3><span data-translate="service_arraial_title">Arraial do Cabo</span></h3>
                     </div>
                     <div class="preco">
-                        <span>R$ 200</span>/pessoa + taxas
+                        <span>R$ 200</span><span data-translate="service_arraial_price">/pessoa + taxas</span>
                     </div>
-                    <p>Esse é um dos passeios mais procurados, e por um bom motivo! Arraial do Cabo é conhecido como o "Caribe Brasileiro" por suas águas incrivelmente azuis e transparentes. Saímos de Búzios às 8:15 e percorremos 35km até Arraial do Cabo. Lá, embarcamos em um barco de 2 pisos super completo (com bar, banheiros masculino e feminino, coletes para adultos e crianças) para um passeio de 4 horas pelas águas mais cristalinas que você já viu! Visitamos a Ilha do Farol, a Enseada da Praia do Forno, as Prainhas do Pontal do Atalaia, a misteriosa Gruta Azul, a Pedra do Macaco e a Fenda de Nossa Senhora. A equipe é super animada, com música, fotógrafos e guias credenciados que conhecem cada segredo do local. É um dia completo de diversão e paisagens de tirar o fôlego!</p>
+                    <p><span data-translate="service_arraial_desc">Esse é um dos passeios mais procurados, e por um bom motivo! Arraial do Cabo é conhecido como o "Caribe Brasileiro" por suas águas incrivelmente azuis e transparentes. Saímos de Búzios às 8:15 e percorremos 35km até Arraial do Cabo. Lá, embarcamos em um barco de 2 pisos super completo (com bar, banheiros masculino e feminino, coletes para adultos e crianças) para um passeio de 4 horas pelas águas mais cristalinas que você já viu! Visitamos a Ilha do Farol, a Enseada da Praia do Forno, as Prainhas do Pontal do Atalaia, a misteriosa Gruta Azul, a Pedra do Macaco e a Fenda de Nossa Senhora. A equipe é super animada, com música, fotógrafos e guias credenciados que conhecem cada segredo do local. É um dia completo de diversão e paisagens de tirar o fôlego!</span></p>
                     <ul class="features">
-                        <li><i class="fas fa-check"></i> Saída às 08:15 (retorno por volta das 18h)</li>
-                        <li><i class="fas fa-check"></i> Almoço Buffet Livre delicioso já incluído!(exceto bebidas e sobremesas que são vendidos a parte)</li>
-                        <li><i class="fas fa-info-circle"></i> O Almoço é frente a Praia do Foguete, depois terá um curto tempo para conhecer a praia</li>
-                        <li><i class="fas fa-check"></i> Crianças até 4 anos não pagam, de 5 a 10 anos pagam metade + taxa</li>
-                        <li><i class="fas fa-check"></i> Taxa da reserva ecológica (R$10)</li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_arraial_feat1">Saída às 08:15 (retorno por volta das 18h)</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_arraial_feat2">Almoço Buffet Livre delicioso já incluído!(exceto bebidas e sobremesas que são vendidos a parte)</span></li>
+                        <li><i class="fas fa-info-circle"></i> <span data-translate="service_arraial_feat3">O Almoço é frente a Praia do Foguete, depois terá um curto tempo para conhecer a praia</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_arraial_feat4">Crianças até 4 anos não pagam, de 5 a 10 anos pagam metade + taxa</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="service_arraial_feat5">Taxa da reserva ecológica (R$10)</span></li>
                     </ul>
                     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20reservar%20o%20passeio%20para%20Arraial%20do%20Cabo." class="btn btn-secondary whatsapp-reserva">
-                        <i class="fab fa-whatsapp"></i> Reservar Arraial do Cabo
+                        <i class="fab fa-whatsapp"></i> <span data-translate="service_arraial_button">Reservar Arraial do Cabo</span>
                     </a>
                 </div>
             </div>
@@ -239,25 +247,25 @@
                 <div class="servico-content">
                     <div class="servico-header">
                         <div class="emoji">🗿</div>
-                        <h3>Rio Full Day</h3>
+                        <h3><span data-translate="service_rio_title">Rio Full Day</span></h3>
                     </div>
                     <div class="preco">
-                        <span>R$ 340</span>/pessoa
+                        <span>R$ 340</span><span data-translate="service_rio_price">/pessoa</span>
                     </div>
-                    <p>Bora conhecer a Cidade Maravilhosa? Preparei um dia incrível no Rio de Janeiro pra vocês! Visitaremos os pontos mais famosos, com conforto e um guia super gente boa pra contar todas as histórias. É um dia cheio, mas vale cada segundo!</p>
+                    <p><span data-translate="service_rio_desc">Bora conhecer a Cidade Maravilhosa? Preparei um dia incrível no Rio de Janeiro pra vocês! Visitaremos os pontos mais famosos, com conforto e um guia super gente boa pra contar todas as histórias. É um dia cheio, mas vale cada segundo!</span></p>
 <ul class="features">
-    <li><i class="fas fa-check"></i> Saída cedinho das pousadas em Búzios, a partir das 07:00h.</li>
-    <li><i class="fas fa-check"></i> Visita aos ícones do Rio: Cristo Redentor (ingresso incluído!), Maracanã (externo), Sambódromo, Catedral Metropolitana e Escadaria Selarón.</li>
-    <li><i class="fas fa-check"></i> Parada para fotos na Praia de Copacabana e vistas panorâmicas da Zona Sul e Baía de Guanabara.</li>
-    <li><i class="fas fa-check"></i> Almoço buffet variado incluído (bebidas e sobremesas à parte).</li>
-    <li><i class="fas fa-check"></i> Transporte executivo com ar condicionado e guia bilíngue (Português/Espanhol).</li>
-    <li><i class="fas fa-check"></i> Retorno para Búzios no final do dia (ou deixamos você no Rio, se preferir - consulte!).</li>
-    <li><i class="fas fa-check"></i> Crianças até 4 anos não pagam (apresentar documento).</li>
-    <li><i class="fas fa-info-circle"></i> Entrada opcional no Maracanã (R$ 84 adulto) paga à parte.</li>
-    <li><i class="fas fa-info-circle"></i> Necessário nome completo e documento de todos os participantes.</li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_rio_feat1">Saída cedinho das pousadas em Búzios, a partir das 07:00h.</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_rio_feat2">Visita aos ícones do Rio: Cristo Redentor (ingresso incluído!), Maracanã (externo), Sambódromo, Catedral Metropolitana e Escadaria Selarón.</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_rio_feat3">Parada para fotos na Praia de Copacabana e vistas panorâmicas da Zona Sul e Baía de Guanabara.</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_rio_feat4">Almoço buffet variado incluído (bebidas e sobremesas à parte).</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_rio_feat5">Transporte executivo com ar condicionado e guia bilíngue (Português/Espanhol).</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_rio_feat6">Retorno para Búzios no final do dia (ou deixamos você no Rio, se preferir - consulte!).</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_rio_feat7">Crianças até 4 anos não pagam (apresentar documento).</span></li>
+    <li><i class="fas fa-info-circle"></i> <span data-translate="service_rio_feat8">Entrada opcional no Maracanã (R$ 84 adulto) paga à parte.</span></li>
+    <li><i class="fas fa-info-circle"></i> <span data-translate="service_rio_feat9">Necessário nome completo e documento de todos os participantes.</span></li>
 </ul>
                     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20reservar%20o%20Rio%20Full%20Day." class="btn btn-secondary whatsapp-reserva">
-                        <i class="fab fa-whatsapp"></i> Reservar Rio Full Day
+                        <i class="fab fa-whatsapp"></i> <span data-translate="service_rio_button">Reservar Rio Full Day</span>
                     </a>
                 </div>
             </div>
@@ -268,23 +276,23 @@
                 <div class="servico-content">
                     <div class="servico-header">
                         <div class="emoji">🚐</div>
-                        <h3>Transfer Privativo</h3>
+                        <h3><span data-translate="service_transfer_title">Transfer Privativo</span></h3>
                     </div>
                     <div class="preco">
-                        <span>Consulte</span> valores
+                        <span><span data-translate="service_transfer_price">Consulte</span></span> valores
                     </div>
-                    <p>Precisa de transporte com conforto e exclusividade? Seja para chegar em Búzios, ir para o aeroporto ou explorar outras cidades como Arraial, Cabo Frio ou Rio, meu serviço de transfer privativo é a solução perfeita! Viaje sem preocupações, com total flexibilidade e segurança.</p>
+                    <p><span data-translate="service_transfer_desc">Precisa de transporte com conforto e exclusividade? Seja para chegar em Búzios, ir para o aeroporto ou explorar outras cidades como Arraial, Cabo Frio ou Rio, meu serviço de transfer privativo é a solução perfeita! Viaje sem preocupações, com total flexibilidade e segurança.</span></p>
 <ul class="features">
-    <li><i class="fas fa-check"></i> Veículo exclusivo para você e seu grupo.</li>
-    <li><i class="fas fa-check"></i> Motorista bilíngue, profissional e super simpático!</li>
-    <li><i class="fas fa-check"></i> Carro com ar condicionado e Wi-Fi para sua comodidade.</li>
-    <li><i class="fas fa-check"></i> Total flexibilidade: escolha os locais, datas e horários de ida e volta.</li>
-    <li><i class="fas fa-check"></i> Atendemos Búzios, Arraial do Cabo, Cabo Frio, Angra dos Reis e Rio de Janeiro.</li>
-    <li><i class="fas fa-info-circle"></i> Ideal para famílias, grupos de amigos ou quem busca mais privacidade.</li>
-    <li><i class="fas fa-info-circle"></i> Consulte valores e reserve diretamente comigo pelo WhatsApp!</li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_transfer_feat1">Veículo exclusivo para você e seu grupo.</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_transfer_feat2">Motorista bilíngue, profissional e super simpático!</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_transfer_feat3">Carro com ar condicionado e Wi-Fi para sua comodidade.</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_transfer_feat4">Total flexibilidade: escolha os locais, datas e horários de ida e volta.</span></li>
+    <li><i class="fas fa-check"></i> <span data-translate="service_transfer_feat5">Atendemos Búzios, Arraial do Cabo, Cabo Frio, Angra dos Reis e Rio de Janeiro.</span></li>
+    <li><i class="fas fa-info-circle"></i> <span data-translate="service_transfer_feat6">Ideal para famílias, grupos de amigos ou quem busca mais privacidade.</span></li>
+    <li><i class="fas fa-info-circle"></i> <span data-translate="service_transfer_feat7">Consulte valores e reserve diretamente comigo pelo WhatsApp!</span></li>
 </ul>
                     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20informações%20sobre%20Transfer%20Privativo." class="btn btn-secondary whatsapp-reserva">
-                        <i class="fab fa-whatsapp"></i> Consultar Transfer Privativo
+                        <i class="fab fa-whatsapp"></i> <span data-translate="service_transfer_button">Consultar Transfer Privativo</span>
                     </a>
                 </div>
             </div>
@@ -294,21 +302,21 @@
     <!-- Casa Buziana -->
     <section id="casa-buziana" class="servicos">
         <div class="container">
-            <h2 class="section-title">Casa no Centro de Búzios</h2>
+            <h2 class="section-title"><span data-translate="house_section_title">Casa no Centro de Búzios</span></h2>
             
             <div class="servico-card">
                 <div class="servico-img casa-buziana-img"></div>
                 <div class="servico-content">
                     <div class="servico-header">
                         <div class="emoji">🏠</div>
-                        <h3>Alugue Temporada</h3>
+                        <h3><span data-translate="house_title">Alugue Temporada</span></h3>
                     </div>
                     <div class="preco">
-                        <span>Consulte</span> disponibilidade e valores
+                        <span><span data-translate="house_price">Consulte</span></span> disponibilidade e valores
                     </div>
-                    <p>Olá querido(a)! Já pensou em ter uma experiência ainda mais completa em Búzios? Nem todo mundo quer se limitar a um quarto de pousada, por isso tenho uma opção especial para você: a Casa Buziana! É uma casa completa e aconchegante, localizada a apenas 100 metros da famosa Rua das Pedras, no coração de Búzios.</p>
+                    <p><span data-translate="house_para1">Olá querido(a)! Já pensou em ter uma experiência ainda mais completa em Búzios? Nem todo mundo quer se limitar a um quarto de pousada, por isso tenho uma opção especial para você: a Casa Buziana! É uma casa completa e aconchegante, localizada a apenas 100 metros da famosa Rua das Pedras, no coração de Búzios.</span></p>
                     
-                    <p>Muitas vezes, principalmente em alta temporada, os valores das pousadas se equiparam ao de uma casa completa. Pensando nisso, ofereço esta opção maravilhosa para você aproveitar Búzios com mais espaço, privacidade e conforto. A casa comporta até 6 pessoas confortavelmente, tem cozinha totalmente equipada (perfeita para preparar aquele café da manhã ou jantar especial), 3 quartos aconchegantes, uma ampla sala de estar e banheiro completo.</p>
+                    <p><span data-translate="house_para2">Muitas vezes, principalmente em alta temporada, os valores das pousadas se equiparam ao de uma casa completa. Pensando nisso, ofereço esta opção maravilhosa para você aproveitar Búzios com mais espaço, privacidade e conforto. A casa comporta até 6 pessoas confortavelmente, tem cozinha totalmente equipada (perfeita para preparar aquele café da manhã ou jantar especial), 3 quartos aconchegantes, uma ampla sala de estar e banheiro completo.</span></p>
                     
                     <div class="casa-buziana-gallery">
                         <img src="images/casa-buziana/COZINHA.jpeg" alt="Cozinha equipada da Casa Buziana">
@@ -322,29 +330,29 @@
                     <p>A localização é simplesmente perfeita! Você estará a poucos passos de tudo que Búzios tem de melhor:</p>
                     
                     <div class="distancias-list">
-                        <h4>Distâncias a pé:</h4>
-                        <li><i class="fas fa-walking"></i> 2 minutos até a Rua das Pedras (Praia do Canto)</li>
-                        <li><i class="fas fa-walking"></i> 2 minutos até a Orla Bardot (Praia da Armação)</li>
-                        <li><i class="fas fa-walking"></i> 10 minutos até a Igreja de Sant'Ana (Praias dos Ossos, Azeda, Azedinha e Ferradura/Tartaruga)</li>
+                        <h4><span data-translate="house_dist_walk_title">Distâncias a pé:</span></h4>
+                        <li><i class="fas fa-walking"></i> <span data-translate="house_dist_walk1">2 minutos até a Rua das Pedras (Praia do Canto)</span></li>
+                        <li><i class="fas fa-walking"></i> <span data-translate="house_dist_walk2">2 minutos até a Orla Bardot (Praia da Armação)</span></li>
+                        <li><i class="fas fa-walking"></i> <span data-translate="house_dist_walk3">10 minutos até a Igreja de Sant'Ana (Praias dos Ossos, Azeda, Azedinha e Ferradura/Tartaruga)</span></li>
                         <li><i class="fas fa-walking"></i> 15 minutos até as praias João Fernandes e João Fernandinho</li>
                         
-                        <h4>De carro:</h4>
-                        <li><i class="fas fa-car"></i> 5 minutos até as praias dos Ossos, Azeda, Azedinha, João Fernandes, João Fernandinho, Brava, Forno, Ferradura e Tartaruga</li>
-                        <li><i class="fas fa-car"></i> 10 minutos até as praias de Geribá, Ferradurinha, Manguinhos e o melhor pôr do sol em Porto da Barra</li>
+                        <h4><span data-translate="house_dist_car_title">De carro:</span></h4>
+                        <li><i class="fas fa-car"></i> <span data-translate="house_dist_car1">5 minutos até as praias dos Ossos, Azeda, Azedinha, João Fernandes, João Fernandinho, Brava, Forno, Ferradura e Tartaruga</span></li>
+                        <li><i class="fas fa-car"></i> <span data-translate="house_dist_car2">10 minutos até as praias de Geribá, Ferradurinha, Manguinhos e o melhor pôr do sol em Porto da Barra</span></li>
                     </div>
                     
-                    <p>Além disso, a apenas 50 metros da casa você encontra o Mercado Econômico com hortifrúti, padaria, farmácia, restaurantes e lojas variadas. E não se esqueça que a Rua das Pedras oferece os melhores restaurantes da cidade e uma cervejaria artesanal para você aproveitar!</p>
+                    <p><span data-translate="house_para4">Além disso, a apenas 50 metros da casa você encontra o Mercado Econômico com hortifrúti, padaria, farmácia, restaurantes e lojas variadas. E não se esqueça que a Rua das Pedras oferece os melhores restaurantes da cidade e uma cervejaria artesanal para você aproveitar!</span></p>
                     
-                    <p>Imagine voltar de um dia de praia e ter um espaço só seu, com a liberdade de preparar um lanche, assistir TV na sala ampla, ou simplesmente relaxar com sua família ou amigos em um ambiente privativo. É uma experiência completamente diferente e muito mais aconchegante!</p>
+                    <p><span data-translate="house_para5">Imagine voltar de um dia de praia e ter um espaço só seu, com a liberdade de preparar um lanche, assistir TV na sala ampla, ou simplesmente relaxar com sua família ou amigos em um ambiente privativo. É uma experiência completamente diferente e muito mais aconchegante!</span></p>
                     
                     <ul class="features">
-                        <li><i class="fas fa-check"></i> Capacidade para até 6 pessoas</li>
-                        <li><i class="fas fa-check"></i> Cozinha completa e equipada</li>
-                        <li><i class="fas fa-check"></i> Localização privilegiada (100m da Rua das Pedras)</li>
-                        <li><i class="fas fa-check"></i> Ambiente privativo e aconchegante</li>
+                        <li><i class="fas fa-check"></i> <span data-translate="house_feat1">Capacidade para até 6 pessoas</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="house_feat2">Cozinha completa e equipada</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="house_feat3">Localização privilegiada (100m da Rua das Pedras)</span></li>
+                        <li><i class="fas fa-check"></i> <span data-translate="house_feat4">Ambiente privativo e aconchegante</span></li>
                     </ul>
                     <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20informações%20sobre%20a%20Casa%20Buziana." class="btn btn-secondary whatsapp-reserva">
-                        <i class="fab fa-whatsapp"></i> Consultar disponibilidade
+                        <i class="fab fa-whatsapp"></i> <span data-translate="house_button">Consultar disponibilidade</span>
                     </a>
                 </div>
             </div>
@@ -354,7 +362,7 @@
     <!-- Depoimentos -->
     <section id="depoimentos" class="depoimentos">
         <div class="container">
-            <h2 class="section-title">O que dizem nossos hóspedes</h2>
+            <h2 class="section-title"><span data-translate="testimonials_title">O que dizem nossos hóspedes</span></h2>
             <div class="depoimentos-slider">
                 <div class="depoimento-item active">
                     <div class="depoimento-content">
@@ -365,8 +373,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p>"Obrigadoooo Lucila! foi um prazer te conhecer, desculpa fazer tantas perguntas kkk Obrigada tambem pelo Trasnfer"</p>
-                        <div class="autor">— Ana P. Costa, São Paulo</div>
+                        <p><span data-translate="testimonial1_text">"Obrigadoooo Lucila! foi um prazer te conhecer, desculpa fazer tantas perguntas kkk Obrigada tambem pelo Trasnfer"</span></p>
+                        <div class="autor"><span data-translate="testimonial1_author">— Ana P. Costa, São Paulo</span></div>
                     </div>
                 </div>
                 <div class="depoimento-item">
@@ -378,8 +386,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p>"O Buggy Tour foi muito bom, mas o Passeio para Arraial foi inesquecivel! Obrigado Luli, valeu super apena !!"</p>
-                        <div class="autor">— Ana Clara Santana, Rio de Janeiro</div>
+                        <p><span data-translate="testimonial2_text">"O Buggy Tour foi muito bom, mas o Passeio para Arraial foi inesquecivel! Obrigado Luli, valeu super apena !!"</span></p>
+                        <div class="autor"><span data-translate="testimonial2_author">— Ana Clara Santana, Rio de Janeiro</span></div>
                     </div>
                 </div>
                 <div class="depoimento-item">
@@ -391,8 +399,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p>"Fizemos o passeio para Arraial do Cabo e foi maravilhoso! Obrigado Lucila por todo carinho"</p>
-                        <div class="autor">— Nahuel Sebastian, Argentina</div>
+                        <p><span data-translate="testimonial3_text">"Fizemos o passeio para Arraial do Cabo e foi maravilhoso! Obrigado Lucila por todo carinho"</span></p>
+                        <div class="autor"><span data-translate="testimonial3_author">— Nahuel Sebastian, Argentina</span></div>
                     </div>
                 </div>
             </div>
@@ -411,51 +419,51 @@
     <!-- FAQ -->
     <section id="faq" class="faq">
         <div class="container">
-            <h2 class="section-title">Perguntas Frequentes</h2>
+            <h2 class="section-title"><span data-translate="faq_title">Perguntas Frequentes</span></h2>
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Como faço para reservar um passeio?</h3>
+                        <h3><span data-translate="faq1_q">Como faço para reservar um passeio?</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>É super simples! Basta clicar no botão "Reservar" do passeio desejado e você será direcionado para o meu WhatsApp. Responderei em até 1 hora.</p>
+                        <p><span data-translate="faq1_a">É super simples! Basta clicar no botão "Reservar" do passeio desejado e você será direcionado para o meu WhatsApp. Responderei em até 1 hora.</span></p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Quais formas de pagamento são aceitas?</h3>
+                        <h3><span data-translate="faq2_q">Quais formas de pagamento são aceitas?</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Aceitamos dinheiro, PIX e cartões de crédito/débito. Alguns passeios têm valores diferenciados conforme a forma de pagamento.</p>
+                        <p><span data-translate="faq2_a">Aceitamos dinheiro, PIX e cartões de crédito/débito. Alguns passeios têm valores diferenciados conforme a forma de pagamento.</span></p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Posso remarcar ou cancelar um passeio?</h3>
+                        <h3><span data-translate="faq3_q">Posso remarcar ou cancelar um passeio?</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Sim, com até 24h de antecedência, sem taxa adicional. Cancelamentos com menos de 24h podem estar sujeitos a taxas.</p>
+                        <p><span data-translate="faq3_a">Sim, com até 24h de antecedência, sem taxa adicional. Cancelamentos com menos de 24h podem estar sujeitos a taxas.</span></p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>O que devo levar para os passeios?</h3>
+                        <h3><span data-translate="faq4_q">O que devo levar para os passeios?</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Recomendamos: roupas de banho, protetor solar, toalha, documentos pessoais e dinheiro para gastos extras. Informações específicas serão enviadas após a reserva.</p>
+                        <p><span data-translate="faq4_a">Recomendamos: roupas de banho, protetor solar, toalha, documentos pessoais e dinheiro para gastos extras. Informações específicas serão enviadas após a reserva.</span></p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Como funciona o aluguel da Casa Buziana?</h3>
+                        <h3><span data-translate="faq5_q">Como funciona o aluguel da Casa Buziana?</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>A Casa Buziana pode ser alugada por diárias, com um mínimo de 2 noites. Entre em contato pelo WhatsApp para verificar disponibilidade, valores e condições específicas para o período desejado.</p>
+                        <p><span data-translate="faq5_a">A Casa Buziana pode ser alugada por diárias, com um mínimo de 2 noites. Entre em contato pelo WhatsApp para verificar disponibilidade, valores e condições específicas para o período desejado.</span></p>
                     </div>
                 </div>
             </div>
@@ -465,7 +473,7 @@
     <!-- Contato -->
     <section id="contato" class="contato">
         <div class="container">
-            <h2 class="section-title">Fale Comigo</h2>
+            <h2 class="section-title"><span data-translate="contact_title">Fale Comigo</span></h2>
             <div class="contato-container">
                 <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29573.17675767694!2d-41.90292232089842!3d-22.746969899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9703a2c7f3f5bd%3A0x9d0b9c49c7c3e38d!2zQsO6emlvcywgUko!5e0!3m2!1spt-BR!2sbr!4v1716349890000!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -475,22 +483,22 @@
                         <div class="contato-header">
                             <div class="contato-avatar"></div>
                             <div class="contato-nome">
-                                <h3>Lucila Lucero</h3>
-                                <p>Recepcionista - Pousada Centro UP</p>
+                                <h3><span data-translate="contact_name">Lucila Lucero</span></h3>
+                                <p><span data-translate="contact_role">Recepcionista - Pousada Centro UP</span></p>
                             </div>
                         </div>
                         <div class="contato-body">
-                            <p>Estou no coração de Búzios, pronta para ajudar você a ter experiências incríveis durante sua estadia!</p>
+                            <p><span data-translate="contact_para">Estou no coração de Búzios, pronta para ajudar você a ter experiências incríveis durante sua estadia!</span></p>
                             <div class="contato-item">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>Pousada Centro UP, Búzios - RJ</span>
+                                <span><span data-translate="contact_location">Pousada Centro UP, Búzios - RJ</span></span>
                             </div>
                             <div class="contato-item">
                                 <i class="fab fa-whatsapp"></i>
                                 <span>+55 22 99992-5684</span>
                             </div>
                             <a href="https://wa.me/5522999925684?text=Olá%20Luli!%20Gostaria%20de%20informações%20sobre%20passeios%20em%20Búzios." class="btn btn-primary whatsapp-btn">
-                                <i class="fab fa-whatsapp"></i> Fale comigo no WhatsApp
+                                <i class="fab fa-whatsapp"></i> <span data-translate="hero_whatsapp_button">Fale comigo no WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -504,8 +512,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo-footer">
-                    <h2>ToraTour Búzios</h2>
-                    <p>Experiências inesquecíveis em Búzios e região.</p>
+                    <h2><span data-translate="footer_logo">LuliTour Búzios</span></h2>
+                    <p><span data-translate="footer_tagline">Experiências inesquecíveis em Búzios e região.</span></p>
                 </div>
                 <div class="social-media">
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -514,7 +522,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 ToraTour Búzios - Todos os direitos reservados.</p>
+                <p><span data-translate="footer_copyright">&copy; 2025 LuliTour Búzios. Todos os direitos reservados.</span></p>
             </div>
         </div>
     </footer>
@@ -526,6 +534,8 @@
         </a>
     </div>
 
-    <script src="js/script.js"></script>
+    <!-- Seletor de Idiomas -->
+    <script src="js/translations.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
