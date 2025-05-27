@@ -38,7 +38,7 @@ const translations = {
     service_buggy_rental_feat6: "Support assistance included",
     service_buggy_rental_button: "Book Buggy",
     service_buggy_tour_title: "Buggy Tour",
-    service_buggy_tour_price1: "R$ 210 in cash/PIX",
+    service_buggy_tour_price1: "R$ 210<small> in cash/PIX"</small>,
     service_buggy_tour_price2: "R$ 220 by card",
     service_buggy_tour_desc: "This tour is simply unmissable! Our Buggy Tour passes through 8 stunning beaches and makes 6 strategic stops for photos at breathtaking viewpoints. You'll see the famous Orla Bardot, the statue of Brigitte Bardot, the Três Pescadores, and visit the most beautiful beaches like João Fernandes, Ferradura, and Praia Brava. The driver is super experienced and knows all the best angles for perfect photos! The tour lasts approximately 1h20min and is a fun and exciting way to get to know Búzios. I can guarantee it will be one of the highlights of your trip!",
     service_buggy_tour_feat1: "For 2 passengers",
