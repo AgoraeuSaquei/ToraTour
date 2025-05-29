@@ -206,3 +206,42 @@ document.addEventListener("DOMContentLoaded", function() {
     setLanguage(preferredLanguage);
 });
 
+
+
+
+// Testimonial Form WhatsApp Submission
+document.addEventListener("DOMContentLoaded", function() {
+    const testimonialForm = document.getElementById("testimonial-form");
+    const nameInput = document.getElementById("testimonial-name");
+    const messageInput = document.getElementById("testimonial-message");
+    const phoneNumber = "5522999925684"; // Replace with the actual WhatsApp number
+
+    if (testimonialForm) {
+        testimonialForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const name = nameInput.value.trim();
+            const message = messageInput.value.trim();
+
+            if (name && message) {
+                // Construct the WhatsApp message
+                const whatsappMessage = `Olá Luli! Gostaria de deixar meu depoimento:\n\nNome: ${name}\nMensagem: ${message}`;
+                const encodedMessage = encodeURIComponent(whatsappMessage);
+
+                // Construct the WhatsApp URL
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+                // Open WhatsApp link in a new tab
+                window.open(whatsappUrl, "_blank");
+
+                // Optional: Clear the form after submission
+                // nameInput.value = "";
+                // messageInput.value = "";
+            } else {
+                // Optional: Add some user feedback if fields are empty
+                alert("Por favor, preencha seu nome e mensagem.");
+            }
+        });
+    }
+});
+
