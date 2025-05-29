@@ -425,7 +425,7 @@ const translations = {
     testimonial1_text: "Obrigadoooo Lucila! foi um prazer te conhecer, desculpa fazer tantas perguntas kkk Obrigada tambem pelo Trasnfer",
     testimonial1_author: "— Ana P. Costa, São Paulo",
     testimonial2_text: "O Buggy Tour foi muito bom, mas o Passeio para Arraial foi inesquecivel! Obrigado Luli, valeu super apena !!",
-    testimonial2_author: "— Ana Clara Santana, Rio de Janeiro",
+    testimonial2_author: "— Alessandra Santana, Rio de Janeiro",
     testimonial3_text: "Fizemos o passeio para Arraial do Cabo e foi maravilhoso! Obrigado Lucila por todo carinho",
     testimonial3_author: "— Nahuel Sebastian, Argentina",
     faq_title: "Perguntas Frequentes",
