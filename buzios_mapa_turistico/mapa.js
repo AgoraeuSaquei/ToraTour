@@ -1059,7 +1059,7 @@ async function calcularRota(destino, nomeDestino) {
         return;
     } else if (
         nomeDestino === "Praia do Forno" &&
-        (pousadaSelecionada === "pousada1" || pousadaSelecionada === "pousada2")
+        (pousadaSelecionada === "pousada1" || pousadaSelecionada === "pousada2" || pousadaSelecionada === "pousada3")
     ) {
         // Caminho: pousadaX -> pousada3 -> waypoints personalizados -> Praia do Forno
         const origem = pousadas[pousadaSelecionada].coordenadas;
